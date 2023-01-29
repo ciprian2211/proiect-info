@@ -1,0 +1,72 @@
+.main .logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+}
+body
+{
+    background-color: #323438;
+}
+.main
+{
+    font-size: 50px;
+    text-align: center;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top:300px;
+}
+header .buton
+{
+    display:flex;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(110, 131, 51);
+    color:white;
+    border:#323438;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    padding: auto;
+    position: relative;
+    top: 20px;
+    
+}
+.buton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.buton span::after
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+.buton:hover span{
+    padding-right: 25px;
+    
+}
+.buton:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }

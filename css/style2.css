@@ -30,7 +30,7 @@
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color:  rgb(110, 131, 51)
+    color:  rgb(110, 131, 51);
   }
   .sidenav .closebtn
   {
@@ -113,7 +113,7 @@
   {
     position:relative;
     height: 100px;
-    width: 150px;
+    width: 100px;
     padding: auto;
     opacity: 60%;
   }
@@ -125,5 +125,30 @@
     opacity: 70%;
     position:relative;
     color:#f1f1f1;
+
+}
+.main .scrpt
+{
+  width:400px;
+  float:right;
+  padding: 20px;
+  opacity: 70%;
+  position: sticky;
+  background-color: #323438;
+  z-index: 1;
+  left:1493px;
+}
+.main .acop
+{
+  background-color:#323438;
+  position: sticky;
+  z-index: 2;
+  padding: auto;
+  width:15px;
+  height: 210px;
+  float: right;
+  top:796px;
+  left: 1512px;
+  
 
 }
