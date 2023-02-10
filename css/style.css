@@ -1,125 +1,138 @@
- /* The sidebar menu */
- .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 0; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 100px;
-  transition: 0.5s;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Staatliches&display=swap');
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 55px 12px 12px 8px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border-bottom: 1px solid rgb(110, 131, 51);
-  border-radius: 5px;
-  padding-bottom: 42px;
-  text-align: center;
-  transition: 0.3s;
-  opacity: 60%;
-  
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color:  rgb(110, 131, 51)
-}
-.sidenav .closebtn
-{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  border-bottom: #000;
-}
-
-/* Style page content */
-#main {
-  transition: margin-left .5s; /* Same as the width of the sidebar */
-  padding:20 px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
-body{
-  background-color: #323438;
-}
-ul {
-  list-style-type: none;
+html,body{
+  height:100%;
   margin: 0;
   padding: 0;
-  width: 160px;
-  background-color: #f1f1f1;
-}
-
-li a {
-  display: block;
-  color: rgb(253, 253, 253);
-  padding: 16px 32px;
-  text-decoration: none;
-  
-}
-
-/* Change the link color on hover */
-li a:hover {
-  background-color: #555;
-  color: white;
-}
-ul {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-.main .bilca
-  {
-  position:static;
-  background-color: rgb(110, 131, 51);
-  font-size: 30px;
-  color:rgb(255, 255, 255);
-  text-align: center;
-  padding: 10px;
-  width: 100px;
-  height: 30px;
-  opacity: 50%;
-  
   }
 
+#main {
+  transition: margin-left .5s; 
+  padding:20 px;
+  
+}
+body{
+  background-color: #0b132bff;
+}
 .sus{
   position:sticky;
   float: center;
   padding: 30px;
 }
-.sus .dunga
-{
- 
-  border-bottom: solid 5px  rgb(110, 131, 51);
-  position: static;
-  width: auto;
+.sal{
+  position:fixed !important;
+  padding: 70px 0;
+  opacity: 60%;
+  margin: auto;
+  left: 10px;
+  right: 0;
+  top:-100px;
+  height: 300px;
+  width: 300px;
+}
+img
+{ display: block;
+  height: 30%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed !important;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 40%;
+}
+.buton1 { grid-area: 1 / 1 / 2 / 7; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px; }
+.buton2 { grid-area: 2 / 1 / 3 / 2; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;}
+.buton3 { grid-area: 2 / 2 / 3 / 3; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;}
+.buton4 { grid-area: 2 / 3 / 3 / 4; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;}
+.buton5 { grid-area: 2 / 4 / 3 / 5; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;}
+.buton6 { grid-area: 2 / 5 / 3 / 6; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px; }
+.buton7{ grid-area: 2 / 6 / 3 / 7; background-color: #1c2541ff;
+  border: 2px #1c2541ff;
+  color:white;
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;}
+
+.butoane {
+  
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: 100px 300px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 50px;
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button:hover{
+  background-color:#3a506bff;
+  border-color: #3a506bff;
+}
+footer{
+  background-color: rgba(28, 37, 65, 0.5);
+  position:absolute;
+  width:1850px;
+  height: 30px;
+  font-size: 20px;
+  top:917px;
+  text-align: left;
+  opacity: 30%;
+  color:#5bc0beff;
 
 }
-.sus .logo
-{
-  position:relative;
-  height: 100px;
-  width: 100px;
-  padding: auto;
-  opacity: 60%;
-}
-.main .titlu
-{
-  text-align: center;
-  color:pink;
-  font-size: 50px;
+
+.egg{
+  float:right !important;
+  background-color: #0b132bff;
+  border:#0b132bff;
+  color:#1c2541ff;
+  border-radius: 10px;
 }

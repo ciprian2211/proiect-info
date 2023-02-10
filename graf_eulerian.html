@@ -4,39 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eulerian</title>
     <link rel="stylesheet" href="css/style5.css">
-	<link rel="stylesheet" href="css/skins/color-1.css">
+	<link rel="stylesheet" href="css/transitions.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body>
+	<div class="transition transition-2 is-active"></div>
 	<div class="sus">
 		<header class="dunga">
 			<a href="/start.html">
-				<img class="logo"  src="photos/MARE_LOGO_SALUT_RESPECT_NEGRII__NU_CHIAR_.png"></img>
+				<img class="logo"  src="photos/glici_ifect.png"></img>
 				</a>
 </header>
 	</div>
     <div id="mySidenav" class="sidenav">
 		
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="/index.html" >Pagina principala</a>
-					<a href="/graf_complet.html" >Graf Complet</a>
-					<a href="/graf_regulat.html">Graf Regulat</a>
-					<a href="/graf_complementar.html">Graf Complementar</a>
-					<a href="/graf_part.html">Graf Partial & Subgraf</a>
-					<a href="/graf_eulerian.html">Graf Eulerian</a>
-					<a href="/graf_hamiltonian.html">Graf Hamiltonian</a>
+		<a href="/index.html" id="tren">Pagina principală</a>
+		<a href="/graf_complet.html" id="tren">Graf Complet</a>
+		<a href="/graf_regulat.html" id="tren">Graf Regulat</a>
+		<a href="/graf_complementar.html"id="tren">Graf Complementar</a>
+		<a href="/graf_part.html"id="tren">Graf Parțial & Subgraf</a>
+		<a href="/graf_eulerian.html"id="tren">Graf Eulerian</a>
+		<a href="/graf_hamiltonian.html"id="tren">Graf Hamiltonian</a>
 				
 		</div>
 		
-		<div id="main" class="main">
-		<section class="home section">
-			<span class="bilca" onclick="openNav()" onclick="closeNav()">&#9776 </span>
+		<div id="main" class="main" id="main">
+			<span class="bilca" onclick="openNav()" onclick="closeNav()">&#9776 </span>	
+		<div class="text">
+			<div class="titlu">
+				Graf Eulerian</div>
+			<div class="t1">
+				<p><code>Definiții:</code><br>
+					Într-un graf neorientat, se numește lanț eulerian un lanț simplu în care apare fiecare muchie (fiind lanț simplu, fiecare muchie apare o singură dată).<br><br>
+					Într-un graf neorientat, se numește ciclu eulerian un ciclu în care apare fiecare muchie.<br><br>
+					Un graf neorientat se numește graf eulerian dacă conține un ciclu eulerian.<br>
+			   </p>
+			</div>
 			
-		</section>	
+		
+		<div class="t2">
+				<p>
+					<code>Teoreme:</code><br>
+					Un graf neorientat fără vârfuri izolate este eulerian dacă și numai dacă este conex și toate vârfurile au grad par.<br><br>
+					Un graf neorientat fără vârfuri izolate conține un lanț eulerian, dacă și numai dacă este conex și toate vârfurile au grad par, mai puțin două. Aceste vârfuri vor fi extremitățile lanțului eulerian.<br>
+			</p>
 		</div>
+		<div class="t3">
+			<img src="/photos/graf eulerian.png"></img>
+		</div>
+		<div class="t4">
+			<p><code>Exemplu:</code>
+				Pentru graful neorientat de mai sus avem n=6 și m=18, iar muchiile sunt:<br>
+<sup id="textArea">
+1 2
+1 3
+2 1
+2 3
+2 4
+2 5
+3 1
+3 2
+3 5
+3 6
+4 2
+4 5
+5 2
+5 3
+5 4
+5 6
+6 3
+6 5</sup><button onclick="myFunction()"><span class="material-symbols-outlined">
+	content_copy
+	</span></button><br>
+		<strong>În graful de mai sus ciclul (1 2 4 5 3 6 5 2 3 1) este eulerian.</strong>
+			</p>
 	</div>
+	<div class="scrpt">
+	<iframe style='max-width:100%; border: none; height: 700px; width: 800px;' height=700 width=800 src=https://www.interviewbit.com/embed/snippet/eaca23a008506d3683dc title='Interviewbit Ide snippet/eaca23a008506d3683dc' loading="lazy" allow="clipboard-write" allowfullscreen referrerpolicy="unsafe-url" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox" ></iframe>
+</div>
+	<footer><span class="material-symbols-outlined">
+		copyright
+		</span><sup class="fot1">Proiect sponsorizat de FC Scuipă în Dunăre și Bilca(comuna fă cu mâna) | Elsira enjoyer |</sup>		
+	</footer>
+	</div>
+
 	<script src="script.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>

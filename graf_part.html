@@ -4,39 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parțial & Subgraf</title>
     <link rel="stylesheet" href="css/style4.css">
-	<link rel="stylesheet" href="css/skins/color-1.css">
+	<link rel="stylesheet" href="css/transitions.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body>
+	<div class="transition transition-2 is-active"></div>
 	<div class="sus">
 		<header class="dunga">
 			<a href="/start.html">
-				<img class="logo"  src="photos/MARE_LOGO_SALUT_RESPECT_NEGRII__NU_CHIAR_.png"></img>
+				<img class="logo"  src="photos/glici_ifect.png"></img>
 				</a>
 </header>
 	</div>
     <div id="mySidenav" class="sidenav">
 		
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="/index.html" >Pagina principala</a>
-					<a href="/graf_complet.html" >Graf Complet</a>
-					<a href="/graf_regulat.html">Graf Regulat</a>
-					<a href="/graf_complementar.html">Graf Complementar</a>
-					<a href="/graf_part.html">Graf Partial & Subgraf</a>
-					<a href="/graf_eulerian.html">Graf Eulerian</a>
-					<a href="/graf_hamiltonian.html">Graf Hamiltonian</a>
+		<a href="/index.html" id="tren">Pagina principală</a>
+		<a href="/graf_complet.html" id="tren">Graf Complet</a>
+		<a href="/graf_regulat.html" id="tren">Graf Regulat</a>
+		<a href="/graf_complementar.html"id="tren">Graf Complementar</a>
+		<a href="/graf_part.html"id="tren">Graf Parțial & Subgraf</a>
+		<a href="/graf_eulerian.html"id="tren">Graf Eulerian</a>
+		<a href="/graf_hamiltonian.html"id="tren">Graf Hamiltonian</a>
 				
 		</div>
+		<div id="main" class="main" id="main">
+			<span class="bilca" onclick="openNav()" onclick="closeNav()">&#9776 </span>	
+		<div class="text">
+			<div class="titlu">
+				<h1>Graf Parțial & Subgraf</h1>
+			</div>
+			<div class="subtitlu1">
+				<h2>Graf Parțial</h2>
+			</div>
+			<div class="subtitlu2">
+				<h2>Subgraf</h2>
+			</div>
+			<div class="t1">
+				
+				<p><code>Definiție:</code><br>
+					Fie <var>G=(X,U)</var> un graf neorientat.<br>
+					Se numește graf parțial al lui <var>G</var> un graf <var>G1=(X1,U1)</var>, format din aceeași mulțime de noduri <var>(X=X1)</var> și o submulțime a muchiilor lui <var>G</var>. <br>
+					Cu alte cuvinte, graful parțial are aceleași noduri ca graful inițial, doar numărul de muchii diferă.<br><br>
+					<strong>Numărul total de grafuri parțiale G este 2<sup>m</sup>.</strong>
+			   </p>
+			</div>
+			
 		
-		<div id="main" class="main">
-		<section class="home section">
-			<span class="bilca" onclick="openNav()" onclick="closeNav()">&#9776 </span>
-			<div class="titlu">Lascu</div>
-		</section>	
+		<div class="t2">
+				<p><code>Definiție:</code><br>
+					Fie <var>G=(X,U)</var> un graf neorientat.<br>
+					Se numește subgraf al lui <var>G</var> un graf <var>G1=(X1,U1)</var> cu proprietatea că <var>X1</var> este o submulțime nevidă a lui <var>X</var>, iar <var>U1</var> conține toate muchiile lui <var>G</var> care au ambele extremități în <var>X1</var>.<br><br>
+					<strong>Numărul total de subgrafuri al lui <var>G</var> este 2<var><sup>n</sup></var>-1</strong>
+			</p>
 		</div>
+		<div class="t3">
+			<img src="/photos/4214214241.png"></img>
+			În figura anterioară este prezentat un graf parțial, în care au fost scoase muchiile din interiorul formei. Astfel nodul 7 rămâne nod izolat.
+		</div>
+		<div class="t4">
+			<img src="/photos/subgraf.png"></img>
+			
+		</div>
+		</div>
+		<footer><span class="material-symbols-outlined">
+			copyright
+			</span><sup class="fot1">Proiect sponsorizat de FC Scuipă în Dunăre și Bilca(comuna fă cu mâna) | Forța BMW | Audi A4 este o mașină pentru persoane cu dizabilități |</sup>
+			
+		</footer>
 	</div>
+	</div>
+
 	<script src="script.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
