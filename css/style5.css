@@ -200,14 +200,14 @@
   footer{
     background-color: rgba(28, 37, 65, 0.5);
     position: absolute;
-    width:1920px;
+    width:100%;
     height: 30px;
     font-size: 20px;
-    top:683px;
+    bottom: 0;
     text-align: left;
     opacity: 30%;
     color:#5bc0beff;
-  }  
+  } 
   button{
     width: 35px;
     opacity: 50%;
