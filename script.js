@@ -20,3 +20,14 @@ console.log('Something is not right', 'Oops!');
 })
       
 	  }
+    function myFunction1() {
+      var content = document.getElementById('textarea').innerHTML;
+  navigator.clipboard.writeText(content)
+  .then(() => {
+  console.log("Text has been copied!")
+  })
+  .catch(err => {
+  console.log('Something is not right', 'Oops!');
+  })
+        
+      }
